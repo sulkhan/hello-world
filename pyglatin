@@ -1,0 +1,15 @@
+#Transtale into Pyglatin
+
+pyg = 'ay'
+
+original = raw_input('Enter a word:')  # enter the word
+
+
+if len(original) > 0 and original.isalpha(): # only letters
+    word = original.lower() #lower case
+    first = word[0] # take 1st letter
+    new_word = word[1:] # slice 1st letter and take remaining word
+    new_word = new_word + first + pyg # rearrange word
+    print new_word # print new word
+else:
+    print 'empty'
